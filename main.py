@@ -14,37 +14,41 @@ arrAux2 = ' '.join([str(elem) for elem in arrAux])
 arrMain = arrAux2.split(" ")
 
 
-# Variável auxiliar para Coluna 1
-x = 0
-# Variável auxiliar para Coluna 2
-y = 1
+x = 0 # Variável auxiliar para Coluna 1
+y = 1 # Variável auxiliar para Coluna 2
+col1 = [] # Coluna 1 do txt
+col2 = [] # Coluna 2 do txt
 
 
-# Coluna 1 do txt
-col1 = []
-# Coluna 2 do txt
-col2 = []
-
-
-# Valores p/ Coluna 1
+# Valores para Coluna 1
 for i in range(0, int(len(arrMain)/2)):
     col1.append(int(arrMain[x]))
     x += 2
 
-# Valores p/ Coluna 2
+# Valores para Coluna 2
 for i in range(0, int(len(arrMain)/2)):
     col2.append(int(arrMain[y]))
     y += 2
 
-
-# Lista de adjacência
+# Lista de Adjacência
 listaAdj = dict()
 for i in range(0, len(col1)):
-    listaAdj[col1[i]] = col2[i]
+    if (col1[i] in listaAdj):
+        if(isinstance(listaAdj[col1[i]], int)):
+            arrAuxla = []
+            arrAuxla.append(listaAdj[col1[i]])
+            arrAuxla.append(col2[i])
+            listaAdj.update({col1[i]: arrAuxla})
+        else:
+            arrAuxla.append(col2[i])
+            listaAdj.update({col1[i]: arrAuxla})
+    else:
+        listaAdj[col1[i]] = col2[i]
 
+# print(listaAdj[col1[0]][0])
 
-# Printando os valores
-print("Array Completo: " + arrMain)
-print("Coluna 1: " + col1)
-print("Coluna 2: " + col2)
-print("Lista de Adjacência: " + listaAdj)
+# Printando os valores com F-strings
+print(f"Array Completo: {arrMain}")
+print(f"Coluna 1: {col1}")
+print(f"Coluna 2: {col2}")
+print(f"Lista de Adjacência: {listaAdj}")
