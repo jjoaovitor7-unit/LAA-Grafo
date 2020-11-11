@@ -48,7 +48,7 @@ for i in range(0, len(col1)):
 # print(listaAdj[col1[0]][0])
 
 # Printando os valores com F-strings
-print(f"Array Completo: {arrMain}")
-print(f"Coluna 1: {col1}")
-print(f"Coluna 2: {col2}")
-print(f"Lista de Adjacência: {listaAdj}")
+# print(f"Array Completo: {arrMain}")
+# print(f"Coluna 1: {col1}")
+# print(f"Coluna 2: {col2}")
+print(f"Lista de Adjacência: \n{listaAdj}")
