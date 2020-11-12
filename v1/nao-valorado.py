@@ -1,5 +1,5 @@
 # Passando os dados do arquivo grafo.txt para um array
-file = open('data/grafo-nao-valorado.txt', 'r', encoding="utf8")
+file = open('v1/data/grafo-nao-valorado.txt', 'r', encoding="utf8")
 arrAux = []
 for line in file:
     arrAux.append(line)
