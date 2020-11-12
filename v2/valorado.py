@@ -7,6 +7,6 @@ grafo = {}
 for linha in file:
     vInicial, vFinal, peso = linha.split()
     grafo.setdefault(int(vInicial), []).append((int(vFinal), int(peso)))
-    # grafo.setdefault(vFinal, []).append((vInicial, peso))
+    # grafo.setdefault(int(vFinal), []).append((int(vInicial), int(peso)))
 
 print(f"Lista de Adjacência: {grafo}")
