@@ -49,21 +49,20 @@ for i in range(0, len(col1)):
             # arrAuxla2.append(str(str(col3[i-1]) + " " + str(col3[i])).split(" "))
             arrAuxla2.append(col3[i-1])
 
-            listaAdj.update({col1[i]: str(arrAuxla) + str(arrAuxla2)})
+            listaAdj.update({col1[i]: arrAuxla + ["pesos:"] + arrAuxla2 + list(map(int, str(col3[i])))})
 
         else:
             arrAuxla.append(col2[i])
             arrAuxla2.append(col3[i-1])
-            listaAdj.update({col1[i]: str(arrAuxla) + str(arrAuxla2) + " " + str(col3[i])})
+            listaAdj.update({col1[i]: arrAuxla + ["pesos:"] + arrAuxla2 + list(map(int, str(col3[i])))})
 
     else:
         listaAdj[col1[i]] = col2[i]
 
-# print(listaAdj[col1[0]][0])
 
 # Printando os valores com F-strings
 # print(f"Array Completo: {arrMain}")
-print(f"Coluna 1: {col1}")
-print(f"Coluna 2: {col2}")
-print(f"Coluna 3: {col3}")
+# print(f"Coluna 1: {col1}")
+# print(f"Coluna 2: {col2}")
+# print(f"Coluna 3: {col3}")
 print(f"Lista de Adjacência: \n{listaAdj}")
