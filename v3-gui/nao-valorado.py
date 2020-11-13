@@ -20,7 +20,7 @@ def listaAdj():
 
 def visualizar_grafo():
     g = nx.read_edgelist('v3-gui/data/grafo-nao-valorado.txt', create_using=nx.DiGraph(), nodetype=int)
-    nx.draw(g, with_labels=True)
+    nx.draw_shell(g, with_labels=True)
     plt.show()
 
 
