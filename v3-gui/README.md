@@ -1,6 +1,8 @@
 # LAA-Grafo (v3-gui)
-## Como rodar?
-Instalar as dependências: `pip3 install -r requirements.txt`
+## Como rodar o projeto?
+Instalar as dependências:
+
+`pip3 install -r requirements.txt`
 
 <b> Estando na pasta v3-gui </b>
 
