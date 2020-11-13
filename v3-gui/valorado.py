@@ -39,7 +39,11 @@ def main(self):
 
     graphRepresentation = tk.Text(self, height=5, width=50)
     graphRepresentation.grid(row=2, column=0)
-    graphRepresentation.insert(tk.END, listaAdj())
+    for i in range(0, len(listaAdj())+1):
+        if i in listaAdj().keys():
+            graphRepresentation.insert(tk.END, str(i) + " -> " + str(listaAdj()[i]) + "\n")
+        else:
+            i += 1
     graphRepresentation.configure(state='disabled')
 
 
