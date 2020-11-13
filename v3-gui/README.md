@@ -8,8 +8,6 @@ Instalar as dependências:
 
   * Para um grafo não-valorado:
     * `python3 nao-valorado.py`
-  
-  <br />
 
   * Para um grafo valorado:
     * `python3 valorado.py`
