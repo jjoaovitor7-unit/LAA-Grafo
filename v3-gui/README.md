@@ -6,5 +6,7 @@ Instalar as dependências:
 
 <b> Estando na pasta v3-gui </b>
 
-  * Para um grafo não-valorado: `python3 nao-valorado.py`
-  * Para um grafo valorado: `python3 valorado.py`
+  * Para um grafo não-valorado:
+    * `python3 nao-valorado.py`
+  * Para um grafo valorado:
+    * `python3 valorado.py`
