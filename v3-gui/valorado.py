@@ -20,7 +20,7 @@ def listaAdj():
 
 def visualizar_grafo():
     g = nx.read_weighted_edgelist('v3-gui/data/grafo-valorado.txt', create_using=nx.DiGraph(), nodetype=int)
-    nx.draw(g)
+    nx.draw(g, with_labels=True)
     plt.show()
 
 
