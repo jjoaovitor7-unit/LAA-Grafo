@@ -1,5 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
+import networkx as nx
+import matplotlib.pyplot as plt
 
 def listaAdj():
     # Abrindo arquivo
@@ -16,6 +18,12 @@ def listaAdj():
     return grafo
 
 
+def visualizar_grafo():
+    g = nx.read_edgelist('v3-gui/data/grafo-nao-valorado.txt', create_using=nx.Graph(), nodetype=int)
+    nx.draw(g)
+    plt.show()
+
+
 def main(self):
     # Título
     self.title("LAA-Grafo")
@@ -30,6 +38,15 @@ def main(self):
     style.configure('main.TLabel', background='#fff',
                 foreground='#000',
                 font=('Times New Roman', '14'))
+
+    # Menu
+    menubar = tk.Menu(self)
+    self.config(menu=menubar)
+
+    grafoMenu = tk.Menu(menubar, tearoff=0)
+    menubar.add_cascade(label='Grafo', menu=grafoMenu)
+
+    grafoMenu.add_command(label='Visualizar Grafo', command=visualizar_grafo)
 
     # Widgets
     titleLabel = ttk.Label(self, text="LAA-Grafo",
