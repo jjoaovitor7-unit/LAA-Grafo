@@ -1,5 +1,5 @@
 # Abrindo arquivo
-file = open('v2/data/grafo-nao-valorado.txt', 'r', encoding='utf8')
+file = open('v2-terminal/data/grafo-nao-valorado.txt', 'r', encoding='utf8')
 
 # Inicializando grafo
 grafo = {}

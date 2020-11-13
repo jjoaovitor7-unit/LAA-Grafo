@@ -40,6 +40,7 @@ def main(self):
     graphRepresentation = tk.Text(self, height=5, width=50)
     graphRepresentation.grid(row=2, column=0)
     graphRepresentation.insert(tk.END, listaAdj())
+    graphRepresentation.configure(state='disabled')
 
 
 def run():
