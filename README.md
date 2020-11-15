@@ -5,6 +5,7 @@
     ```
     git clone https://github.com/jjoaovitor7-unit/LAA-Grafo
     cd LAA-Grafo
+    pip3 install -r v2-terminal/requirements.txt
     python3 v2-terminal/nao-valorado.py
     ```
 
@@ -12,6 +13,7 @@
     ```
     git clone https://github.com/jjoaovitor7-unit/LAA-Grafo
     cd LAA-Grafo
+    pip3 install -r v2-terminal/requirements.txt
     python3 v2-terminal/valorado.py
     ```
 
