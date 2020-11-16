@@ -34,3 +34,13 @@
     pip3 install -r v3-gui/requirements.txt
     python3 v3-gui/valorado.py
     ```
+
+ <br />
+
+* Para a versão web
+  ```
+  git clone https://github.com/jjoaovitor7-unit/LAA-Grafo
+  cd LAA-Grafo/v4-web
+  python3 -m http.server
+  http://0.0.0.0:8000/
+  ```
