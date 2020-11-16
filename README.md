@@ -38,9 +38,9 @@
  <br />
 
 * Para a versão web
-  ```
-  git clone https://github.com/jjoaovitor7-unit/LAA-Grafo
-  cd LAA-Grafo/v4-web
-  python3 -m http.server
-  http://0.0.0.0:8000/
-  ```
+   ```
+   git clone https://github.com/jjoaovitor7-unit/LAA-Grafo
+   cd LAA-Grafo/v4-web
+   python3 -m http.server
+   http://0.0.0.0:8000/
+   ```
