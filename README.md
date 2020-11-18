@@ -5,16 +5,16 @@
     ```
     git clone https://github.com/jjoaovitor7-unit/LAA-Grafo
     cd LAA-Grafo
-    pip3 install -r v2-terminal/requirements.txt
-    python3 v2-terminal/nao-valorado.py
+    pip3 install -r v1-terminal/requirements.txt
+    python3 v1-terminal/nao-valorado.py
     ```
 
   * Para grafo valorado:
     ```
     git clone https://github.com/jjoaovitor7-unit/LAA-Grafo
     cd LAA-Grafo
-    pip3 install -r v2-terminal/requirements.txt
-    python3 v2-terminal/valorado.py
+    pip3 install -r v1-terminal/requirements.txt
+    python3 v1-terminal/valorado.py
     ```
 
  <br />
@@ -24,15 +24,15 @@
     ```
     git clone https://github.com/jjoaovitor7-unit/LAA-Grafo
     cd LAA-Grafo
-    pip3 install -r v3-gui/requirements.txt
-    python3 v3-gui/nao-valorado.py
+    pip3 install -r v2-gui/requirements.txt
+    python3 v2-gui/nao-valorado.py
     ```
   * Para grafo valorado:
     ```
     git clone https://github.com/jjoaovitor7-unit/LAA-Grafo
     cd LAA-Grafo
-    pip3 install -r v3-gui/requirements.txt
-    python3 v3-gui/valorado.py
+    pip3 install -r v2-gui/requirements.txt
+    python3 v2-gui/valorado.py
     ```
 
  <br />
@@ -41,7 +41,7 @@
   * Para grafo valorado e não-valorado:
   ```
   git clone https://github.com/jjoaovitor7-unit/LAA-Grafo
-  cd LAA-Grafo/v4-web
+  cd LAA-Grafo/v3-web
   python3 -m http.server
   http://0.0.0.0:8000/
   ```
