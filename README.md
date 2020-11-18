@@ -39,9 +39,9 @@
 
 * Para a versão web
   * Para grafo valorado e não-valorado:
-  ```
-  git clone https://github.com/jjoaovitor7-unit/LAA-Grafo
-  cd LAA-Grafo/v3-web
-  python3 -m http.server
-  http://0.0.0.0:8000/
-  ```
+    ```
+    git clone https://github.com/jjoaovitor7-unit/LAA-Grafo
+    cd LAA-Grafo/v3-web
+    python3 -m http.server
+    http://0.0.0.0:8000/
+    ```
