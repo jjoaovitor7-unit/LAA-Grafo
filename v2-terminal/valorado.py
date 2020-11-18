@@ -8,14 +8,15 @@ file = open('v2-terminal/data/grafo-valorado.txt', 'r', encoding='utf8')
 grafo = {}
 
 for linha in file:
-    vInicial, vFinal, peso = linha.split()
-    grafo.setdefault(int(vInicial), []).append((int(vFinal), int(peso)))
-    # grafo.setdefault(int(vFinal), []).append((int(vInicial), int(peso)))
+    v_inicial, v_final, peso = linha.split()
+    grafo.setdefault(int(v_inicial), []).append((int(v_final), int(peso)))
+    # grafo.setdefault(int(v_final), []).append((int(v_inicial), int(peso)))
 
 print(f"Lista de Adjacência: {grafo}")
 
-cond = input("Deseja visualizar o grafo em imagem?\n<S/n>:")
-if (cond.upper() == "S"):
-    g = nx.read_weighted_edgelist('v3-gui/data/grafo-valorado.txt', create_using=nx.DiGraph(), nodetype=int)
+view_graph_option = input("Deseja visualizar o grafo em imagem?\n<S/n>:")
+if (view_graph_option.upper() == "S"):
+    g = nx.read_weighted_edgelist('v3-gui/data/grafo-valorado.txt',
+                                  create_using=nx.DiGraph(), nodetype=int)
     nx.draw_shell(g, with_labels=True)
     plt.show()

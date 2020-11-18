@@ -38,6 +38,7 @@
  <br />
 
 * Para a versão web
+  * Para grafo valorado e não-valorado:
   ```
   git clone https://github.com/jjoaovitor7-unit/LAA-Grafo
   cd LAA-Grafo/v4-web
