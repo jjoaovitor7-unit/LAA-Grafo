@@ -1,4 +1,4 @@
-file = open('data/grafo-25000.txt')
+file = open('src/data/grafo-25000.txt')
 
 grafo = {}
 cont = 0
